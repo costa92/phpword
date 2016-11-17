@@ -12,7 +12,8 @@ define('APP_DEBUG', true);
 // 网站根URL
 define('APP_URL', 'http://localhost/word');
 // Autoload 自动载入
-require '../vendor/autoload.php';
+require '../bootstrap.php';
+
 
 // 加载框架
 require '../myphp/MyPHP.php';

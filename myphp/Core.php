@@ -98,9 +98,9 @@ class Core
     // 自动加载控制器和模型类
     static function loadClass($class)
     {
-        $frameworks = FRAME_PATH . $class . '.class.php';
-        $controllers = APP_PATH . 'application/controllers/' . $class . '.class.php';
-        $models = APP_PATH . 'application/models/' . $class . '.class.php';
+        $frameworks = FRAME_PATH . $class .'.php';
+        $controllers = APP_PATH . 'app/controllers/' . $class . '.php';
+        $models = APP_PATH . 'app/models/' . $class . '.php';
         if (file_exists($frameworks)) {
             // 加载框架核心类
             include $frameworks;
